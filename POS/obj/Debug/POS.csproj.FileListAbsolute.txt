@@ -1,0 +1,12 @@
+D:\Mis Documentos\GitHub\POS\POS\bin\Debug\POS.exe.config
+D:\Mis Documentos\GitHub\POS\POS\bin\Debug\POS.exe
+D:\Mis Documentos\GitHub\POS\POS\bin\Debug\POS.pdb
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.csprojAssemblyReference.cache
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Users.resources
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Properties.Resources.resources
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.csproj.GenerateResource.cache
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.exe
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.pdb
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Login.FrmPassword.resources
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Login.FrmLogin.resources
