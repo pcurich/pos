@@ -1,4 +1,5 @@
 ﻿using POS.Connections;
+using POS.Modules.Cash;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,7 @@ namespace POS.Modules.Login
 
                 if (dt.Rows.Count > 0)
                 {
-                    CashOpen cashOpen = new CashOpen();
+                    FrmOpen cashOpen = new FrmOpen();
                     Hide();
                     cashOpen.ShowDialog();
                     Close();
@@ -64,6 +65,45 @@ namespace POS.Modules.Login
         {
             var form = new FrmRecovery();
             form.ShowDialog();
-        } 
+        }
+
+        private void BtnClean_Click(object sender, EventArgs e)
+        {
+            txtPassword.Clear();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var length = 0;
+                if (!"".Equals(txtPassword.Text))
+                {
+                    length = txtPassword.Text.Length;
+                    txtPassword.Text = txtPassword.Text.Substring(0, length - 1);
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void TsmiShow_Click(object sender, EventArgs e)
+        {
+            ChangePasswordChart(false, true);
+        }
+
+        private void TsmiHidden_Click(object sender, EventArgs e)
+        {
+            ChangePasswordChart(true,false);
+        }
+
+        private void ChangePasswordChart(bool show, bool hidden)
+        {
+            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+            tsmiShow.Visible = show;
+            tsmiHidden.Visible = hidden;
+        }
     }
 }

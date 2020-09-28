@@ -122,12 +122,12 @@ namespace POS.Modules.Login
                 foreach (ManagementObject getserial in management.Get())
                 {
                     _serialMachine = getserial.Properties["SerialNumber"].Value.ToString();
-
-                    MOSTRAR_CAJA_POR_SERIAL();
+                    ShowCashBySerial(); 
                     try
                     {
-                        txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
-                        lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+
+                        //txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
+                        //lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
                     }
                     catch (Exception ex)
                     {
@@ -138,6 +138,31 @@ namespace POS.Modules.Login
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ShowCashBySerial()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = Master.DB;
+                con.Open();
+
+                da = new SqlDataAdapter("mostrar_cajas_por_Serial_de_DiscoDuro", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Serial", _serialMachine);
+                da.Fill(dt);
+                //datalistado_caja.DataSource = dt;
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
             }
         }
     }

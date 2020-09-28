@@ -252,6 +252,7 @@
             this.btnClean.TabIndex = 9;
             this.btnClean.Text = "Borrar";
             this.btnClean.UseVisualStyleBackColor = false;
+            this.btnClean.Click += new System.EventHandler(this.BtnClean_Click);
             // 
             // btn0
             // 
@@ -282,6 +283,7 @@
             this.btnBack.TabIndex = 11;
             this.btnBack.Text = "<--";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // btnLogin
             // 
@@ -394,12 +396,14 @@
             this.tsmiShow.Image = ((System.Drawing.Image)(resources.GetObject("tsmiShow.Image")));
             this.tsmiShow.Name = "tsmiShow";
             this.tsmiShow.Size = new System.Drawing.Size(28, 46);
+            this.tsmiShow.Click += new System.EventHandler(this.TsmiShow_Click);
             // 
             // tsmiHidden
             // 
             this.tsmiHidden.Image = ((System.Drawing.Image)(resources.GetObject("tsmiHidden.Image")));
             this.tsmiHidden.Name = "tsmiHidden";
             this.tsmiHidden.Size = new System.Drawing.Size(28, 46);
+            this.tsmiHidden.Click += new System.EventHandler(this.TsmiHidden_Click);
             // 
             // pnlHeader
             // 
@@ -473,6 +477,7 @@
             this.txtPassword.Location = new System.Drawing.Point(136, 10);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(260, 40);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
