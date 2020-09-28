@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -37,6 +38,7 @@
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnlBodySelected.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -59,8 +61,8 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(719, 602);
-            this.flowLayoutPanel1.TabIndex = 3;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(719, 522);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pnlBodySelected
             // 
@@ -70,7 +72,7 @@
             this.pnlBodySelected.Controls.Add(this.flowLayoutPanel1);
             this.pnlBodySelected.Location = new System.Drawing.Point(194, 167);
             this.pnlBodySelected.Name = "pnlBodySelected";
-            this.pnlBodySelected.Size = new System.Drawing.Size(719, 602);
+            this.pnlBodySelected.Size = new System.Drawing.Size(719, 522);
             this.pnlBodySelected.TabIndex = 4;
             // 
             // pnlHeader
@@ -82,7 +84,7 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnlHeader.Size = new System.Drawing.Size(1095, 110);
-            this.pnlHeader.TabIndex = 5;
+            this.pnlHeader.TabIndex = 3;
             // 
             // lblLogin
             // 
@@ -113,7 +115,7 @@
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 163);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(150, 666);
+            this.pnlLeft.Size = new System.Drawing.Size(150, 586);
             this.pnlLeft.TabIndex = 6;
             // 
             // pnlRight
@@ -122,21 +124,25 @@
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(945, 163);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(150, 666);
+            this.pnlRight.Size = new System.Drawing.Size(150, 586);
             this.pnlRight.TabIndex = 7;
             // 
-            // Login
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1095, 829);
+            this.ClientSize = new System.Drawing.Size(1095, 749);
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlBodySelected);
             this.Controls.Add(this.pnlHeader);
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.pnlBodySelected.ResumeLayout(false);
@@ -156,5 +162,6 @@
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel pnlRight;
         private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.Timer timer;
     }
 }

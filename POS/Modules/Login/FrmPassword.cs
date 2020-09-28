@@ -59,5 +59,11 @@ namespace POS.Modules.Login
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void BtnForgot_Click(object sender, EventArgs e)
+        {
+            var form = new FrmRecovery();
+            form.ShowDialog();
+        } 
     }
 }

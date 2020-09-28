@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace POS.Modules.Login
 {
     public partial class FrmLogin : Form
     {
+        string _serialMachine = "";
         public FrmLogin()
         {
             InitializeComponent();
@@ -107,6 +109,36 @@ namespace POS.Modules.Login
         private void Login_Load(object sender, EventArgs e)
         {
             GetUsers();
-        } 
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+
+            try
+            {
+                ManagementObjectSearcher management = new ManagementObjectSearcher("Select * From Win32_BaseBoard");
+                foreach (ManagementObject getserial in management.Get())
+                {
+                    _serialMachine = getserial.Properties["SerialNumber"].Value.ToString();
+
+                    MOSTRAR_CAJA_POR_SERIAL();
+                    try
+                    {
+                        txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
+                        lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -327,6 +327,7 @@
             this.btnForgot.TabIndex = 17;
             this.btnForgot.Text = "¿Olvidó su contraseña?";
             this.btnForgot.UseVisualStyleBackColor = false;
+            this.btnForgot.Click += new System.EventHandler(this.BtnForgot_Click);
             // 
             // panel2
             // 
@@ -440,7 +441,7 @@
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(718, 163);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(150, 682);
+            this.pnlRight.Size = new System.Drawing.Size(150, 586);
             this.pnlRight.TabIndex = 8;
             // 
             // pnlLeft
@@ -449,7 +450,7 @@
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 163);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(150, 682);
+            this.pnlLeft.Size = new System.Drawing.Size(150, 586);
             this.pnlLeft.TabIndex = 9;
             // 
             // panel3
@@ -494,7 +495,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(868, 845);
+            this.ClientSize = new System.Drawing.Size(868, 749);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlRight);

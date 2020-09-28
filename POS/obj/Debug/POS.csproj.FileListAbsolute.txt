@@ -10,3 +10,13 @@ D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.exe
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.pdb
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Login.FrmPassword.resources
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Login.FrmLogin.resources
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.csprojAssemblyReference.cache
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.Modules.Login.FrmPassword.resources
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.Modules.Login.FrmLogin.resources
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.Modules.Login.FrmRecovery.resources
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.Users.resources
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.Properties.Resources.resources
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.csproj.GenerateResource.cache
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.csproj.CoreCompileInputs.cache
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.exe
+C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.pdb

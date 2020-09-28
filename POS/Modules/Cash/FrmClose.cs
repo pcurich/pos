@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS.Modules
+namespace POS.Modules.Cash
 {
-    public partial class CashOpen : Form
+    public partial class FrmClose : Form
     {
-        public CashOpen()
+        public FrmClose()
         {
             InitializeComponent();
         }
