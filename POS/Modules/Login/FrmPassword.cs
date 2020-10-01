@@ -16,6 +16,11 @@ namespace POS.Modules.Login
     public partial class FrmPassword : Form
     {
         public string user;
+        public string _serialMachine = "";
+        string _idCash = "";
+        string _cash = "";
+
+        DataGridView data = null;
 
         public FrmPassword()
         {
@@ -42,18 +47,20 @@ namespace POS.Modules.Login
                 da.SelectCommand.Parameters.AddWithValue("@password", txtPassword.Text);
                 da.SelectCommand.Parameters.AddWithValue("@login", user);
                 da.Fill(dt);
-                //dataUsers.DataSource = dt;
+                //data.DataSource = dt;
                 con.Close();
 
                 if (dt.Rows.Count > 0)
                 {
-                    FrmOpen cashOpen = new FrmOpen();
-                    Hide();
-                    cashOpen.ShowDialog();
-                    Close();
+                    ShowMovements();
+                    if (data.Rows.Count > 0)
+                    {
+                        FrmOpen cashOpen = new FrmOpen();
+                        Hide();
+                        cashOpen.ShowDialog();
+                        Close();
+                    }
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -104,6 +111,34 @@ namespace POS.Modules.Login
             txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
             tsmiShow.Visible = show;
             tsmiHidden.Visible = hidden;
+        }
+
+        private void ShowMovements()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = Master.DB;
+                con.Open();
+
+                da = new SqlDataAdapter("MOSTRAR_MOVIMIENTOS_DE_CAJA_POR_SERIAL", con);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@serial", _serialMachine);
+                da.Fill(dt);
+                data = new DataGridView
+                {
+                    DataSource = dt
+                };
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
     }
 }

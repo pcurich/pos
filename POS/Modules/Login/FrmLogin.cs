@@ -17,6 +17,11 @@ namespace POS.Modules.Login
     public partial class FrmLogin : Form
     {
         string _serialMachine = "";
+        string _idCash = "";
+        string _cash = "";
+
+        DataGridView data = null;
+
         public FrmLogin()
         {
             InitializeComponent();
@@ -80,7 +85,8 @@ namespace POS.Modules.Login
         {
             var formPassword = new FrmPassword
             {
-                user = ((PictureBox)sender).Tag.ToString()
+                user = ((PictureBox)sender).Tag.ToString(),
+                _serialMachine = _serialMachine
             };
             //lblLogin.Text = ((PictureBox)sender).Tag.ToString();
             Hide();
@@ -95,7 +101,8 @@ namespace POS.Modules.Login
         {
             var formPassword = new FrmPassword
             {
-                user = ((Label)sender).Text
+                user = ((Label)sender).Text,
+                _serialMachine = _serialMachine
             };
             Hide();
             formPassword.ShowDialog();
@@ -125,9 +132,8 @@ namespace POS.Modules.Login
                     ShowCashBySerial(); 
                     try
                     {
-
-                        //txtidcaja.Text = datalistado_caja.SelectedCells[1].Value.ToString();
-                        //lblcaja.Text = datalistado_caja.SelectedCells[2].Value.ToString();
+                        _idCash= data.SelectedCells[1].Value.ToString();
+                        _cash= data.SelectedCells[2].Value.ToString();
                     }
                     catch (Exception ex)
                     {
@@ -155,7 +161,10 @@ namespace POS.Modules.Login
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
                 da.SelectCommand.Parameters.AddWithValue("@Serial", _serialMachine);
                 da.Fill(dt);
-                //datalistado_caja.DataSource = dt;
+                data = new DataGridView
+                {
+                    DataSource = dt
+                };
                 con.Close();
 
             }
@@ -165,5 +174,6 @@ namespace POS.Modules.Login
 
             }
         }
+
     }
 }
