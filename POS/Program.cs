@@ -1,4 +1,5 @@
-﻿using POS.Modules.Login;
+﻿using POS.Management;
+using POS.Modules.Login;
 using POS.Modules.Sale;
 using System; 
 using System.Windows.Forms;
@@ -15,7 +16,7 @@ namespace POS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSale());
+            Application.Run(new FrmDataBase());
         }
     }
 }
