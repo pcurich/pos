@@ -22,3 +22,4 @@ C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.exe
 C:\Users\PedroCurich\Documents\GitHub\pos\POS\obj\Debug\POS.pdb
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Cash.FrmOpen.resources
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Login.FrmRecovery.resources
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Sale.FrmSale.resources
