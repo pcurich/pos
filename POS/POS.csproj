@@ -97,6 +97,12 @@
     <Compile Include="Modules\Principal\FrmDashboard.Designer.cs">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Product\FrmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Product\FrmProducts.Designer.cs">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Sale\FrmSale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Login\FrmRecovery.resx">
       <DependentUpon>FrmRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Product\FrmProducts.resx">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Sale\FrmSale.resx">
       <DependentUpon>FrmSale.cs</DependentUpon>
