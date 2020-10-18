@@ -26,3 +26,5 @@ D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Sale.FrmSale.resources
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Management.FrmDataBase.resources
 D:\Mis Documentos\GitHub\POS\POS\bin\Debug\Bunifu_UI_v1.5.3.dll
 D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.csproj.CopyComplete
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Product.FrmProducts.resources
+D:\Mis Documentos\GitHub\POS\POS\obj\Debug\POS.Modules.Product.FrmGroups.resources
