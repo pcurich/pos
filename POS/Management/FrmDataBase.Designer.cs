@@ -170,7 +170,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuFlatButton btnGenerate;
+        //private Bunifu.Framework.UI.BunifuFlatButton btnGenerate;
         private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.DataGridView dataList;
     }

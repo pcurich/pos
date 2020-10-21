@@ -91,7 +91,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pnlBodyDescription = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlSubHeader.SuspendLayout();
@@ -130,7 +130,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1417, 73);
+            this.pnlHeader.Size = new System.Drawing.Size(1370, 73);
             this.pnlHeader.TabIndex = 0;
             // 
             // label1
@@ -141,7 +141,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1417, 73);
+            this.label1.Size = new System.Drawing.Size(1370, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "Productos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,14 +155,14 @@
             this.pnlSubHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubHeader.Location = new System.Drawing.Point(0, 73);
             this.pnlSubHeader.Name = "pnlSubHeader";
-            this.pnlSubHeader.Size = new System.Drawing.Size(1417, 40);
+            this.pnlSubHeader.Size = new System.Drawing.Size(1370, 40);
             this.pnlSubHeader.TabIndex = 1;
             // 
             // pnlBtnSearch
             // 
             this.pnlBtnSearch.Controls.Add(this.menuStrip1);
             this.pnlBtnSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlBtnSearch.Location = new System.Drawing.Point(956, 0);
+            this.pnlBtnSearch.Location = new System.Drawing.Point(909, 0);
             this.pnlBtnSearch.Name = "pnlBtnSearch";
             this.pnlBtnSearch.Size = new System.Drawing.Size(37, 40);
             this.pnlBtnSearch.TabIndex = 3;
@@ -190,7 +190,7 @@
             // 
             this.pnlExcel.Controls.Add(this.menuStrip2);
             this.pnlExcel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlExcel.Location = new System.Drawing.Point(993, 0);
+            this.pnlExcel.Location = new System.Drawing.Point(946, 0);
             this.pnlExcel.Name = "pnlExcel";
             this.pnlExcel.Size = new System.Drawing.Size(382, 40);
             this.pnlExcel.TabIndex = 4;
@@ -220,7 +220,7 @@
             // 
             this.pnlAdd.Controls.Add(this.menuStrip3);
             this.pnlAdd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlAdd.Location = new System.Drawing.Point(1375, 0);
+            this.pnlAdd.Location = new System.Drawing.Point(1328, 0);
             this.pnlAdd.Name = "pnlAdd";
             this.pnlAdd.Size = new System.Drawing.Size(42, 40);
             this.pnlAdd.TabIndex = 5;
@@ -251,7 +251,7 @@
             this.pnlProducSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlProducSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlProducSearch.Name = "pnlProducSearch";
-            this.pnlProducSearch.Size = new System.Drawing.Size(1417, 40);
+            this.pnlProducSearch.Size = new System.Drawing.Size(1370, 40);
             this.pnlProducSearch.TabIndex = 2;
             // 
             // textBox1
@@ -260,7 +260,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1417, 40);
+            this.textBox1.Size = new System.Drawing.Size(1370, 40);
             this.textBox1.TabIndex = 0;
             // 
             // pnlFooter
@@ -272,7 +272,7 @@
             this.pnlFooter.Location = new System.Drawing.Point(0, 650);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Padding = new System.Windows.Forms.Padding(10);
-            this.pnlFooter.Size = new System.Drawing.Size(1417, 67);
+            this.pnlFooter.Size = new System.Drawing.Size(1370, 67);
             this.pnlFooter.TabIndex = 2;
             // 
             // pnlFooterRight
@@ -280,7 +280,7 @@
             this.pnlFooterRight.Controls.Add(this.label4);
             this.pnlFooterRight.Controls.Add(this.label5);
             this.pnlFooterRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlFooterRight.Location = new System.Drawing.Point(867, 10);
+            this.pnlFooterRight.Location = new System.Drawing.Point(820, 10);
             this.pnlFooterRight.Name = "pnlFooterRight";
             this.pnlFooterRight.Size = new System.Drawing.Size(540, 47);
             this.pnlFooterRight.TabIndex = 1;
@@ -355,7 +355,7 @@
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 113);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1417, 537);
+            this.pnlBody.Size = new System.Drawing.Size(1370, 537);
             this.pnlBody.TabIndex = 3;
             // 
             // pnlBodyBarCode
@@ -774,21 +774,22 @@
             // 
             this.pnlBodyDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlBodyDescription.Controls.Add(this.textBox2);
+            this.pnlBodyDescription.Controls.Add(this.txtDescription);
             this.pnlBodyDescription.Controls.Add(this.label6);
             this.pnlBodyDescription.Location = new System.Drawing.Point(136, 23);
             this.pnlBodyDescription.Name = "pnlBodyDescription";
-            this.pnlBodyDescription.Size = new System.Drawing.Size(946, 42);
+            this.pnlBodyDescription.Size = new System.Drawing.Size(899, 42);
             this.pnlBodyDescription.TabIndex = 0;
             // 
-            // textBox2
+            // txtDescription
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(152, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(794, 42);
-            this.textBox2.TabIndex = 1;
+            this.txtDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDescription.Location = new System.Drawing.Point(152, 0);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(747, 42);
+            this.txtDescription.TabIndex = 1;
+            this.txtDescription.TextChanged += new System.EventHandler(this.TxtDescription_TextChanged);
             // 
             // label6
             // 
@@ -805,7 +806,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1417, 717);
+            this.ClientSize = new System.Drawing.Size(1370, 717);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlSubHeader);
@@ -909,7 +910,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel pnlBodyDescription;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.MenuStrip menuStrip7;

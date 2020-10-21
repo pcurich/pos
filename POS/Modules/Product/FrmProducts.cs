@@ -125,8 +125,14 @@ namespace POS.Modules.Product
             form.ShowDialog();
         }
 
+
         #endregion
 
-
+        private void TxtDescription_TextChanged(object sender, EventArgs e)
+        {
+            txtDescription.AutoCompleteCustomSource = DataTableHelper.LoadAutoComplete();
+            txtDescription.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            txtDescription.AutoCompleteSource = AutoCompleteSource.CustomSource;
+        }
     }
 }
