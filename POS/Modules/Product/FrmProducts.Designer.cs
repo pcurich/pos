@@ -130,7 +130,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1370, 73);
+            this.pnlHeader.Size = new System.Drawing.Size(1692, 73);
             this.pnlHeader.TabIndex = 0;
             // 
             // label1
@@ -141,7 +141,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1370, 73);
+            this.label1.Size = new System.Drawing.Size(1692, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "Productos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,14 +155,14 @@
             this.pnlSubHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSubHeader.Location = new System.Drawing.Point(0, 73);
             this.pnlSubHeader.Name = "pnlSubHeader";
-            this.pnlSubHeader.Size = new System.Drawing.Size(1370, 40);
+            this.pnlSubHeader.Size = new System.Drawing.Size(1692, 40);
             this.pnlSubHeader.TabIndex = 1;
             // 
             // pnlBtnSearch
             // 
             this.pnlBtnSearch.Controls.Add(this.menuStrip1);
             this.pnlBtnSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlBtnSearch.Location = new System.Drawing.Point(909, 0);
+            this.pnlBtnSearch.Location = new System.Drawing.Point(1231, 0);
             this.pnlBtnSearch.Name = "pnlBtnSearch";
             this.pnlBtnSearch.Size = new System.Drawing.Size(37, 40);
             this.pnlBtnSearch.TabIndex = 3;
@@ -190,7 +190,7 @@
             // 
             this.pnlExcel.Controls.Add(this.menuStrip2);
             this.pnlExcel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlExcel.Location = new System.Drawing.Point(946, 0);
+            this.pnlExcel.Location = new System.Drawing.Point(1268, 0);
             this.pnlExcel.Name = "pnlExcel";
             this.pnlExcel.Size = new System.Drawing.Size(382, 40);
             this.pnlExcel.TabIndex = 4;
@@ -220,7 +220,7 @@
             // 
             this.pnlAdd.Controls.Add(this.menuStrip3);
             this.pnlAdd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlAdd.Location = new System.Drawing.Point(1328, 0);
+            this.pnlAdd.Location = new System.Drawing.Point(1650, 0);
             this.pnlAdd.Name = "pnlAdd";
             this.pnlAdd.Size = new System.Drawing.Size(42, 40);
             this.pnlAdd.TabIndex = 5;
@@ -251,7 +251,7 @@
             this.pnlProducSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlProducSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlProducSearch.Name = "pnlProducSearch";
-            this.pnlProducSearch.Size = new System.Drawing.Size(1370, 40);
+            this.pnlProducSearch.Size = new System.Drawing.Size(1692, 40);
             this.pnlProducSearch.TabIndex = 2;
             // 
             // textBox1
@@ -260,7 +260,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1370, 40);
+            this.textBox1.Size = new System.Drawing.Size(1692, 40);
             this.textBox1.TabIndex = 0;
             // 
             // pnlFooter
@@ -272,7 +272,7 @@
             this.pnlFooter.Location = new System.Drawing.Point(0, 650);
             this.pnlFooter.Name = "pnlFooter";
             this.pnlFooter.Padding = new System.Windows.Forms.Padding(10);
-            this.pnlFooter.Size = new System.Drawing.Size(1370, 67);
+            this.pnlFooter.Size = new System.Drawing.Size(1692, 67);
             this.pnlFooter.TabIndex = 2;
             // 
             // pnlFooterRight
@@ -280,7 +280,7 @@
             this.pnlFooterRight.Controls.Add(this.label4);
             this.pnlFooterRight.Controls.Add(this.label5);
             this.pnlFooterRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlFooterRight.Location = new System.Drawing.Point(820, 10);
+            this.pnlFooterRight.Location = new System.Drawing.Point(1142, 10);
             this.pnlFooterRight.Name = "pnlFooterRight";
             this.pnlFooterRight.Size = new System.Drawing.Size(540, 47);
             this.pnlFooterRight.TabIndex = 1;
@@ -355,7 +355,7 @@
             this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 113);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(1370, 537);
+            this.pnlBody.Size = new System.Drawing.Size(1692, 537);
             this.pnlBody.TabIndex = 3;
             // 
             // pnlBodyBarCode
@@ -778,7 +778,7 @@
             this.pnlBodyDescription.Controls.Add(this.label6);
             this.pnlBodyDescription.Location = new System.Drawing.Point(136, 23);
             this.pnlBodyDescription.Name = "pnlBodyDescription";
-            this.pnlBodyDescription.Size = new System.Drawing.Size(899, 42);
+            this.pnlBodyDescription.Size = new System.Drawing.Size(1221, 42);
             this.pnlBodyDescription.TabIndex = 0;
             // 
             // txtDescription
@@ -787,7 +787,7 @@
             this.txtDescription.Location = new System.Drawing.Point(152, 0);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(747, 42);
+            this.txtDescription.Size = new System.Drawing.Size(1069, 42);
             this.txtDescription.TabIndex = 1;
             this.txtDescription.TextChanged += new System.EventHandler(this.TxtDescription_TextChanged);
             // 
@@ -806,7 +806,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 717);
+            this.ClientSize = new System.Drawing.Size(1692, 717);
             this.Controls.Add(this.pnlBody);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlSubHeader);
