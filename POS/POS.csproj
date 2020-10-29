@@ -55,6 +55,120 @@
     <Compile Include="Connections\DecryptAes.cs" />
     <Compile Include="Connections\EncryptAes.cs" />
     <Compile Include="Connections\Master.cs" />
+    <Compile Include="Example\FrmCheckedListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmCheckedListBox.Designer.cs">
+      <DependentUpon>FrmCheckedListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmColorDialog.Designer.cs">
+      <DependentUpon>FrmColorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmComboBox.Designer.cs">
+      <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmDataGridView.Designer.cs">
+      <DependentUpon>FrmDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmDateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmDateTime.Designer.cs">
+      <DependentUpon>FrmDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmDomainUpDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmDomainUpDown.Designer.cs">
+      <DependentUpon>FrmDomainUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmErrorProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmErrorProvider.Designer.cs">
+      <DependentUpon>FrmErrorProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmFileDialog.Designer.cs">
+      <DependentUpon>FrmFileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmHelpProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmHelpProvider.Designer.cs">
+      <DependentUpon>FrmHelpProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmImageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmImageList.Designer.cs">
+      <DependentUpon>FrmImageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmListBox.Designer.cs">
+      <DependentUpon>FrmListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmListView.Designer.cs">
+      <DependentUpon>FrmListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmMonthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmMonthCalendar.Designer.cs">
+      <DependentUpon>FrmMonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmPictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmPictureBox.Designer.cs">
+      <DependentUpon>FrmPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmProgressBar.Designer.cs">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmStatusStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmStatusStrip.Designer.cs">
+      <DependentUpon>FrmStatusStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmTableLayoutPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmTableLayoutPanel.Designer.cs">
+      <DependentUpon>FrmTableLayoutPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmTimer.Designer.cs">
+      <DependentUpon>FrmTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Example\FrmToolBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Example\FrmToolBar.Designer.cs">
+      <DependentUpon>FrmToolBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Management\FrmDataBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +238,63 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\DataTableHelper.cs" />
+    <EmbeddedResource Include="Example\FrmCheckedListBox.resx">
+      <DependentUpon>FrmCheckedListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmColorDialog.resx">
+      <DependentUpon>FrmColorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmComboBox.resx">
+      <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmDataGridView.resx">
+      <DependentUpon>FrmDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmDateTime.resx">
+      <DependentUpon>FrmDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmDomainUpDown.resx">
+      <DependentUpon>FrmDomainUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmErrorProvider.resx">
+      <DependentUpon>FrmErrorProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmFileDialog.resx">
+      <DependentUpon>FrmFileDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmHelpProvider.resx">
+      <DependentUpon>FrmHelpProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmImageList.resx">
+      <DependentUpon>FrmImageList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmListBox.resx">
+      <DependentUpon>FrmListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmListView.resx">
+      <DependentUpon>FrmListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmMonthCalendar.resx">
+      <DependentUpon>FrmMonthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmPictureBox.resx">
+      <DependentUpon>FrmPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmProgressBar.resx">
+      <DependentUpon>FrmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmStatusStrip.resx">
+      <DependentUpon>FrmStatusStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmTableLayoutPanel.resx">
+      <DependentUpon>FrmTableLayoutPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmTimer.resx">
+      <DependentUpon>FrmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\FrmToolBar.resx">
+      <DependentUpon>FrmToolBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Management\FrmDataBase.resx">
       <DependentUpon>FrmDataBase.cs</DependentUpon>
     </EmbeddedResource>
